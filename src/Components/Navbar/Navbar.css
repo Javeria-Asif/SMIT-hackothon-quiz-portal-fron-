@@ -1,0 +1,149 @@
+/* * Default styles (for larger screens) */ */
+body {
+  font-size: 16px;
+  /* other default styles */
+}
+
+/* Styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    /* other mobile-specific styles */
+  }
+}
+
+/* Styles for medium-sized screens (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 15px;
+    /* other tablet-specific styles */
+  }
+}
+
+/* Styles for larger screens (e.g., desktops) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+    /* other desktop-specific styles */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    height: 90px;
+
+
+}
+
+.logo{
+    width: 110px;
+    margin-left:30px;
+    
+}
+.heading{
+    z-index: 1;
+     font-size: 35px;
+    position: absolute;
+    top: 0px;
+    left: 175vh;
+    color:#2869d7 ;
+    /* #7e857a */
+}
+.Container1{
+ /* background-color: gainsboro; */
+ margin: 100px;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Times New Roman', Times, serif;
+ line-height: 50px;
+}
+.Container1 h1{
+    font-size: 50px;
+    color: #2869d7;
+
+}
+.page{
+    position: absolute;
+    top: 124px;
+    background-color: gainsboro;
+    width: 100%;
+}
+button{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    background-color:#0D6DB7;
+    color: rgb(237, 231, 231);
+    font-size: 25px;
+    border:  none;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 3px 2.5px 3px 2.5px rgb(10, 10, 10);
+
+}
+button:hover{
+    background-color: #8DC63F;
+    color: white;
+}
