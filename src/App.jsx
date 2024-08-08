@@ -1,28 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import react from 'react'
-import FinalScore from './component/Finalscore';
-import { useState } from 'react'
-import './App.css'
-import Header from './component/Header'
-import Sidebar from './component/Sidebar'
-import Home from './component/Home'
-
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './component/Home';
+import AddQuestion from './component/AddQuestion';
+import Results from './component/Results';
 
 function App() {
-  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
+  const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
 
   const OpenSidebar = () => {
-    setOpenSidebarToggle(!openSidebarToggle)
-  }
+    setOpenSidebarToggle(!openSidebarToggle);
+  };
 
   return (
-    <div className="App">
-     <FinalScore/>
-     <Header OpenSidebar={OpenSidebar}/>
-      <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
-      <Home />
-    </div>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/addQuestion" element={<AddQuestion />} />
+      <Route path="/Results" element={<Results />} />
+    </Routes>
   );
 }
 

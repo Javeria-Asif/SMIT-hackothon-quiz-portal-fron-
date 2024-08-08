@@ -3,9 +3,9 @@ import { Container, Typography, CircularProgress, Box, Link as MuiLink } from '@
 import { Link } from 'react-router-dom';
 
 const FinalScore = () => {
-  const percentage = 75; // Example static percentage value
-  const totalQuestions = 50; // Example total questions value
-  const correctQuestions = 37; // Example correct answers value
+  const percentage = 75; 
+  const totalQuestions = 50; 
+  const correctQuestions = 37; 
 
   return (
     <div style={{ 
