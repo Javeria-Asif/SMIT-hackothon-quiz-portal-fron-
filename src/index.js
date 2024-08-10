@@ -1,12 +1,18 @@
-// index.js or App.js
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
+import './index.css';
 import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { UserProvider } from './components/User/Usercontext'; // Ensure the path is correct
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <UserProvider>
+      <App />
+    </UserProvider>
+  </React.StrictMode>
 );
+
+reportWebVitals();
