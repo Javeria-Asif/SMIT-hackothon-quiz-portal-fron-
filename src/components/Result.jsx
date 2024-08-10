@@ -9,7 +9,7 @@ const StudentQuizResult = ({ score, totalQuestions, email, username, pv = 0, uv 
   // Function to save the result
   const saveResult = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/Students/add-result', {
+      const response = await axios.post('http://backend-url/api/v1/Students/add-result', {
         email,
         username,
         score,

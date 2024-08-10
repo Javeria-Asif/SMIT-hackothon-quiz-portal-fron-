@@ -25,7 +25,7 @@ const handleRegisterChange = (event) => {
 const handleRegister = async (event) => {
   event.preventDefault();
   try {
-      let response = await axios.post("http://localhost:5000/api/auth/signup", Register);
+      let response = await axios.post("http://backend-url/api/auth/signup", Register);
 
       setRegisterMessage(response.data.message);
       toast.success(response.data.message); // Show success message from response

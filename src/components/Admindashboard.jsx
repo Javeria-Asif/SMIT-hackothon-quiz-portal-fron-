@@ -18,7 +18,7 @@ const AdminDashboard = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/questions/add', {
+      const response = await axios.post('http://backend-url/api/questions/add', {
         question,
         a: options.a,
         b: options.b,

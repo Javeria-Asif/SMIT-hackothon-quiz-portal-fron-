@@ -21,7 +21,7 @@ const CourseSelection = () => {
 
     const fetchSubjects = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/questions');
+        const response = await axios.get('http://backend-url/api/questions');
         const uniqueSubjects = [...new Set(response.data.map(q => q.subject))];
         setSubjects(uniqueSubjects);
       } catch (error) {

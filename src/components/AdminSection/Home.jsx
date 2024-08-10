@@ -14,10 +14,10 @@ import {
 } from 'recharts';
 import SearchBar from './searchbar';
 
-const API_ENDPOINT_STUDENTS = 'http://localhost:5000/api/v1/Students/students';
-const API_ENDPOINT_TOP_STUDENTS = 'http://localhost:5000/api/v1/Students/top-students';
-const API_ENDPOINT_QUESTIONS = 'http://localhost:5000/api/v1/Students/questions';
-const API_ENDPOINT_RESULTS = 'http://localhost:5000/api/v1/Students/Admin-results';
+const API_ENDPOINT_STUDENTS = 'http://backend-url/api/v1/Students/students';
+const API_ENDPOINT_TOP_STUDENTS = 'http://backend-url/api/v1/Students/top-students';
+const API_ENDPOINT_QUESTIONS = 'http://backend-url/api/v1/Students/questions';
+const API_ENDPOINT_RESULTS = 'http://backend-url/api/v1/Students/Admin-results';
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -155,7 +155,7 @@ const Home = () => {
             </ListItemIcon>
             <ListItemText primary="Home" />
           </ListItem>
-          <ListItem button component={Link} to="/addQuestion">
+          <ListItem button component={Link} to="/admin">
             <ListItemIcon sx={{ color: 'white' }}>
               <ArchiveIcon />
             </ListItemIcon>
@@ -196,7 +196,7 @@ const Home = () => {
               </Paper>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <Link to="/addQuestion" style={{ textDecoration: 'none' }}>
+              <Link to="/admin" style={{ textDecoration: 'none' }}>
                 <Paper sx={{ p: 2, bgcolor: '#0D6DB7', color: 'white', cursor: 'pointer' }}>
                   <Typography variant="h6" gutterBottom>
                     QUESTIONS

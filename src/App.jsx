@@ -36,7 +36,7 @@ const App = () => {
           <Route path="/admin" element={<AuthGuard component={<Admindashboard />} />} />
           <Route path="/start" element={<AuthGuard component={<Startpage />} />} />
           <Route path="/Home" element={<AuthGuard component={<Home />} />} />
-          <Route path="/addQuestion" element={<AuthGuard component={<AddQuestion />} />} />
+          {/* <Route path="/addQuestion" element={<AuthGuard component={<AddQuestion />} />} /> */}
           <Route path="/AdminResults" element={<AuthGuard component={<AdminResults/>} />} />
         </Routes>
         <ToastContainer />

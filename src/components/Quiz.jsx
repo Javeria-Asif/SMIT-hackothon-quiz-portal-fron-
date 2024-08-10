@@ -25,7 +25,7 @@ const Quiz = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/questions');
+        const response = await axios.get('http://backend-url/api/questions');
         const filteredQuestions = response.data.filter(q => q.subject === subject);
         setQuestions(filteredQuestions);
         setLoading(false);
@@ -83,7 +83,7 @@ const Quiz = () => {
         throw new Error('Missing required fields');
       }
   
-      const response = await axios.post('http://localhost:5000/api/v1/Students/add-result', {
+      const response = await axios.post('http://backend-url/api/v1/Students/add-result', {
         username,
         email,
         status,
